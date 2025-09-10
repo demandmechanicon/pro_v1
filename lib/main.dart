@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => AuthService(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Role Based Auth',
         theme: ThemeData(
           primarySwatch: Colors.blue,
